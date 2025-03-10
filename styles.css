@@ -18,6 +18,7 @@ nav {
   transition: all 0.3s ease;
 }
 
+
 .menu-item:hover {
   color: red;
   transform: scale(1.1);
@@ -55,14 +56,15 @@ nav {
 
 .hero-text h1 {
   font-size: 40px;
-  font-family: 'Gill sans';
+  font-family: 'Work Sans', sans-serif;                                                
   text-align: center;
 }
 
 .hero-text p {
   font-size: 18px;
-  font-family:Cambria;
   text-align: justify;
+  font-family: 'Satoshi', sans-serif;
+                                                
 }
 
 .hero-text img{
@@ -89,13 +91,13 @@ nav {
 
 .container-visimisi h1{
   font-family: 'Gill sans';
-  font-size: 30px;
+  font-size: 80px;
   font-weight: bold;
 }
 
-.container-visimisi p ul{
+.container-visimisi p, ul{
   font-family: 'Gill sans';
-  font-size: 20px;
+  font-size: 21px;
 }
 
 /* Visi */
@@ -129,25 +131,6 @@ nav {
   gap: 20px;
 }
 
-/* Box */
-.box {
-  border: 2px solid #333;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 1000px;
-}
-
-.box h1 {
-  margin: 0;
-  font-weight: bolder;
-  font-size: 40px;
-}
-
-.box p {
-  margin-bottom: 10px;
-}
 
 /* Services */
 .services {
@@ -168,14 +151,13 @@ nav {
 }
 
 .Jam-Oprasional h2 {
-  font-size: 40px;
+  font-size: 80px;
   font-weight: 900;
   margin-bottom: 10px;
 }
 
-.Jam-Oprasional tr th td{
-  justify-content: center;
-  align-items: center;
+.Jam-Oprasional p{
+  font-size: 40px;
 }
 
 /* Service */
