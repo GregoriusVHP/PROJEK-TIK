@@ -5,7 +5,7 @@ body, html {
   background-color: #f8f8f8; 
 }
 
-
+/* Navigation */
 nav {
   position: sticky;
   top: 0;
@@ -13,6 +13,7 @@ nav {
   z-index: 1000;
 }
 
+/* Menu Items */
 .menu-item {
   transition: all 0.3s ease;
 }
@@ -22,6 +23,7 @@ nav {
   transform: scale(1.1);
 }
 
+/* Hero Image */
 .hero-image {
   background-image: url("Banner.png");
   object-fit: cover;
@@ -33,10 +35,12 @@ nav {
   opacity: 1;
 }
 
+/* Hero Text */
 .hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,18 +49,28 @@ nav {
   background-color: transparent;
   width: auto;
   height: auto;
-  padding: 4rem;
+  padding: 0.5rem;
   border-radius: 10px;
 }
 
 .hero-text h1 {
   font-size: 40px;
   font-family: 'Gill sans';
+  text-align: center;
+}
+
+.hero-text p {
+  font-size: 18px;
+  font-family:Cambria;
+  text-align: justify;
 }
 
 .hero-text img{
-  width: 40%;
-  height: 40%;
+  width: 30%;
+  height: 30%;
+  background-color: #dfdb16;
+  border-radius: 20px;
+  margin: 2rem;
 }
 
 .hero-text button:hover {
@@ -64,6 +78,7 @@ nav {
   color: white;
 }
 
+/* Container Visi Misi */
 .container-visimisi {
   display: flex;
   flex-direction: row;
@@ -83,6 +98,7 @@ nav {
   font-size: 20px;
 }
 
+/* Visi */
 .visi{
   background-color: white;
   border: 2px solid #333;
@@ -91,9 +107,9 @@ nav {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 1000px;
-
 }
 
+/* Misi */
 .misi{
   background-color: white;
   border: 2px solid #333;
@@ -103,6 +119,8 @@ nav {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 1000px;
 }
+
+/* Container */
 .container {
   display: flex;
   flex-direction: row;
@@ -111,6 +129,7 @@ nav {
   gap: 20px;
 }
 
+/* Box */
 .box {
   border: 2px solid #333;
   padding: 20px;
@@ -130,6 +149,7 @@ nav {
   margin-bottom: 10px;
 }
 
+/* Services */
 .services {
   display: flex;
   justify-content: center;
@@ -139,24 +159,26 @@ nav {
   padding: 3rem;
 }
 
-  .Jam-Oprasional ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
+/* Jam Oprasional */
+.Jam-Oprasional {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5rem;
+}
 
-  .worktime li {
-    margin-bottom: 10px;
-  }
+.Jam-Oprasional h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
 
-  .worktime li span {
-    font-weight: bold;
-  }
+.Jam-Oprasional tr th td{
+  justify-content: center;
+  align-items: center;
+}
 
-  .worktime li span:first-child {
-    margin-right: 10px;
-  }
-
+/* Service */
 .service {
   background-color: #ffcc00;
   padding: 15px;
@@ -201,6 +223,7 @@ nav {
   border-radius: 10%;
 }
 
+/* Footer */
 .footer {
   cursor: pointer;
   display: flex;
@@ -223,6 +246,7 @@ nav {
   gap: 10px;
   padding-top: 10px;
 }
+
 .contact h3, .address h3 {
   font-size: 40px;
   font-weight: 900;
