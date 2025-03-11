@@ -9,7 +9,6 @@ body, html {
 nav {
   position: sticky;
   top: 0;
-  background-color: #f8f8f8;
   z-index: 1000;
 }
 
@@ -31,7 +30,8 @@ nav {
   background-color: black;
   background-position: center;
   background-size: cover;
-  height: 100%;
+  width: auto;
+  height: 50%;
   position: relative;
   opacity: 1;
 }
@@ -60,20 +60,7 @@ nav {
   text-align: center;
 }
 
-.hero-text p {
-  font-size: 18px;
-  text-align: justify;
-  font-family: 'Satoshi', sans-serif;
-                                                
-}
 
-.hero-text img{
-  width: 30%;
-  height: 30%;
-  background-color: #dfdb16;
-  border-radius: 20px;
-  margin: 2rem;
-}
 
 .hero-text button:hover {
   background-color: #555;
@@ -85,8 +72,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 2em;
-  background-color: #ffcc00;
+  padding: 10em;
+  background-color: #CFE6F6;
 }
 
 .container-visimisi h1{
@@ -132,15 +119,7 @@ nav {
 }
 
 
-/* Services */
-.services {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 1em;
-  padding: 3rem;
-}
+
 
 /* Jam Oprasional */
 .Jam-Oprasional {
@@ -161,9 +140,19 @@ nav {
 }
 
 /* Service */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2em;
+ 
+}
 .service {
-  background-color: #ffcc00;
-  padding: 15px;
+  background-color: #CFE6F6;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 5em;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   width: 250px;
@@ -192,15 +181,16 @@ nav {
   display: inline-block;
   padding: 10px 25px;
   color: black;
-  background-color: #ddd;
+  background-color:#e2f1fc;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 10%;
+  opacity: 0.6;
 }
 
 .service button:hover {
-  background-color: #555;
+  background-color: #6195b9;
   color: white;
   border-radius: 10%;
 }
@@ -224,7 +214,7 @@ nav {
 
 .contact ul li{
   display: flex;
-  flex-direction: colun;
+  flex-direction: column;
   gap: 10px;
   padding-top: 10px;
 }
@@ -235,6 +225,9 @@ nav {
   margin-bottom: 10px;
 }
 
+.contact img:hover {
+  visibility: visible;
+}
 .icons {
   display: flex;
   gap: 10px;
