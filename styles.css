@@ -47,7 +47,7 @@ body, html {
 
 /* Hero Image */
 .hero-image {
-  background-image: url("Banner.png");
+  background-image: url('Banner.png');
   object-fit: cover;
   background-color: black;
   background-position: center;
@@ -57,6 +57,7 @@ body, html {
   position: relative;
   opacity: 1;
 }
+
 
 /* Hero Text */
 .hero-text {
@@ -77,7 +78,7 @@ body, html {
 }
 
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 80px;
   font-family: 'Work Sans', sans-serif;                                                
   text-align: center;
 }
@@ -164,10 +165,51 @@ body, html {
   padding: 5rem;
 }
 .pembatas{
+  background-color:#ddf1f0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
+}
+
+/* Tentang Kami */
+.Tentang-Kami {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for centering */
+  background-color: #f0f0f0; /* Optional: Background for visibility */
+  
+}
+.Tentang-Kami h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.Tentang-Kami p{
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-left: 2em;
+  padding-right: 4em;
+  text-align: center;
+
+}
+
+.ellipse {
+  width: auto; /* Width of the ellipse */
+  height: auto; /* Height of the ellipse */
+  background-color: #007bff; /* Fill color */
+  border-radius: 50%; /* Makes it an ellipse */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white; /* Text color */
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  padding:7rem;
 }
 /* Service */
 .services {
@@ -244,13 +286,19 @@ body, html {
   font-size: larger;
 }
 
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
 .contact, .address {
   width: 50%;
 }
 
 .contact ul li{
   display: flex;
-  flex-direction: colun;
+  flex-direction: row;
   gap: 10px;
   padding-top: 10px;
 }
@@ -281,3 +329,4 @@ body, html {
   width: 10%;
   height: auto;
 }
+
