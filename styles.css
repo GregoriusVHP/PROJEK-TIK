@@ -178,7 +178,7 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height for centering */
+  height: 80vh; /* Full viewport height for centering */
   background-color: #f0f0f0; /* Optional: Background for visibility */
   
 }
@@ -186,6 +186,7 @@ body, html {
   font-size: 40px;
   font-weight: 900;
   margin-bottom: 10px;
+  font-family: 'Gill sans';
 }
 
 .Tentang-Kami p{
@@ -218,6 +219,7 @@ body, html {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 2em;
+  margin:2rem;
  
 }
 .service {
@@ -268,8 +270,8 @@ body, html {
 }
 
 .service button:hover {
-  background-color: #6195b9;
   color: white;
+  background-color: #6195b9;
   border-radius: 10%;
 }
 
