@@ -5,22 +5,44 @@ body, html {
   background-color: #f8f8f8; 
 }
 
-/* Navigation */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+/* Navbar container */
+.navbar-container {
+  background-color: #CFE6F6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
 
-/* Menu Items */
-.menu-item {
-  transition: all 0.3s ease;
+/* Left section */
+.nav-left {
+  display: flex;
+  align-items: center;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Equivalent to space-x-3 */
+}
 
-.menu-item:hover {
-  color: red;
-  transform: scale(1.1);
+/* Right navigation links */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Equivalent to space-x-6 */
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem;
+}
+
+.nav-link {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #4a5568; /* Example hover color */
 }
 
 /* Hero Image */
@@ -72,7 +94,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 10em;
+  padding: 7em;
   background-color: #CFE6F6;
 }
 
@@ -138,7 +160,15 @@ nav {
 .Jam-Oprasional p{
   font-size: 40px;
 }
-
+.Tentang-Kami{
+  padding: 5rem;
+}
+.pembatas{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
 /* Service */
 .services {
   display: flex;
@@ -159,8 +189,13 @@ nav {
   text-align: center;
   height: auto;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
+.service a{
+  color: black;
+  text-decoration: none;
+}
 .service:hover {
   transform: scale(1.1);
 }
@@ -179,7 +214,8 @@ nav {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 10px 25px;
+  gap: 10px;
+  padding: 1rem 2rem;
   color: black;
   background-color:#e2f1fc;
   text-align: center;
@@ -214,7 +250,7 @@ nav {
 
 .contact ul li{
   display: flex;
-  flex-direction: column;
+  flex-direction: colun;
   gap: 10px;
   padding-top: 10px;
 }
@@ -225,9 +261,6 @@ nav {
   margin-bottom: 10px;
 }
 
-.contact img:hover {
-  visibility: visible;
-}
 .icons {
   display: flex;
   gap: 10px;
