@@ -257,9 +257,8 @@ body, html {
 }
 
 .Tentang-Kami img {
-  width: 10%;
+  width: 30%;
   height: auto;
-  gap: 10px;
 }
 .ellipse {
   width: fit-content; /* Width of the ellipse */
@@ -273,7 +272,8 @@ body, html {
   color: white; /* Text color */
   font-family: Arial, sans-serif;
   font-size: 20px;
-  padding: 8rem;
+  padding: 7rem;
+  line-height: 50px;
 }
 
 /* Service */
