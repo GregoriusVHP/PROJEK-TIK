@@ -138,39 +138,48 @@ body, html {
   color: white;
 }
 
-/* Container Visi Misi */
-.container-visimisi{
-  display: flex;
+/* Container for Visi-Misi and Image Section */
+.container {
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Horizontal layout */
+  justify-content: center; /* Space between content and image */
+  padding: 8rem;
+  background: linear-gradient(to bottom right, #d4edda, #f3e6f8); /* Gradient background */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Visi-Misi Section Styles */
+.visi-misi {
+  flex: 1; /* Take up available space */
   flex-direction: row;
-  justify-content: space-evenly;
-  background-color: #CFE6F6;
+  margin-right: 20px; /* Space between content and image */
 }
 
-.container-visimisi h1 {
-  font-family: 'Gill sans';
-  font-size: 80px;
-  font-weight: bold;
+.visi-misi h1 {
+  color: #333333; /* Dark gray text color */
+  font-size: 60px;
+  border-bottom: 2px solid #007BFF; /* Blue underline for headings */
+  padding-bottom: 10px;
 }
 
-/* Visi */
-.visi-misi{
-  margin: 20px auto;
-  border-radius: 5px;
-  padding:5rem;
+.visi-misi p {
+  color: #555555; /* Medium gray text color */
+  font-size: 25px;
 }
 
-.Gambar-VisiMisi{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items:flex-end;
-  gap: 20px;
+.visi-misi ul {
+  list-style-type: disc; /* Bullet points style */
+  padding-left: 20px; /* Indent list items */
 }
 
-.Gambar-VisiMisi img{
-  width: 10%;
-  height: auto;
+.visi-misi li {
+  color: #555555;
+  font-size: 25px;
+  line-height: 50px;
 }
+
+
 /* Container */
 .container {
   display: flex;
@@ -188,7 +197,7 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: space-evenly;  
-  text-align: justify;
+  text-align: center;
   gap: 10px;
   padding: 5rem;
 }
