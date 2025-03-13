@@ -61,64 +61,60 @@
 
 .box {
     display: flex;
-
+    padding: 6rem;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
     background-color: white;
 }
 
 .box img{
-    width: 10%;
+    width: auto;
     height: 10%;
 }
 
 
-/* Footer */
 .footer {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-top: 2px solid #ccc;
-    font-family: Arial, sans-serif;
-    font-size: larger;
-  }
-  
-  .contact, .address {
-    width: 50%;
-  }
-  
-  .contact ul li{
-    display: flex;
-    flex-direction: colun;
-    gap: 10px;
-    padding-top: 10px;
-  }
-  
-  .contact h3, .address h3 {
-    font-size: 40px;
-    font-weight: 900;
-    margin-bottom: 10px;
-  }
-  
-  .icons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .icons img {
-    width: 5%;
-    height: auto;
-  }
-  
-  .address p {
-    font-size: 10px;
-    color: #555;
-  }
-  
-  .address img {
-    margin: 1rem;
-    width: 10%;
-    height: auto;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fffbf0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: larger;
+}
+
+.contact, .address {
+  width: 50%;
+}
+
+.contact h3, .address h3 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.contact li{
+  text-decoration: none;
+  list-style: none; /* Add this line to remove the dots */
+}
+
+.icons img{
+  flex-direction: column;
+  justify-content: center;
+  width: 12%;
+  height: auto;
+  padding: 1rem;
+}
+
+.address p {
+  font-size: 10px;
+  color: #555;
+}
+
+.address img {
+  margin: 1rem;
+  width: 10%;
+  height: auto;
+}

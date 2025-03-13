@@ -2,7 +2,56 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8f8f8; 
+  background-color: #f8f8f8;
+}
+
+/* Fonts */
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.courier-prime-regular-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.courier-prime-bold-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.spicy-rice-regular {
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.work-sans-regular {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.league-spartan-bold {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 
 /* Navbar container */
@@ -47,17 +96,17 @@ body, html {
 
 /* Hero Image */
 .hero-image {
-  background-image: url('Banner.png');
+  background-image: url('Banner.jpg');
   object-fit: cover;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   background-position: center;
   background-size: cover;
   width: auto;
   height: 50%;
   position: relative;
   opacity: 1;
+  padding:2em;
 }
-
 
 /* Hero Text */
 .hero-text {
@@ -78,12 +127,11 @@ body, html {
 }
 
 .hero-text h1 {
-  font-size: 80px;
-  font-family: 'Work Sans', sans-serif;                                                
+  font-size: 60px;
+  color: black;
   text-align: center;
+  word-spacing: 5px;
 }
-
-
 
 .hero-text button:hover {
   background-color: #555;
@@ -91,47 +139,38 @@ body, html {
 }
 
 /* Container Visi Misi */
-.container-visimisi {
+.container-visimisi{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 7em;
   background-color: #CFE6F6;
 }
 
-.container-visimisi h1{
+.container-visimisi h1 {
   font-family: 'Gill sans';
   font-size: 80px;
   font-weight: bold;
 }
 
-.container-visimisi p, ul{
-  font-family: 'Gill sans';
-  font-size: 21px;
-}
-
 /* Visi */
-.visi{
-  background-color: white;
-  border: 2px solid #333;
-  padding: 20px;
-  margin: 10px;
+.visi-misi{
+  margin: 20px auto;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 1000px;
+  padding:5rem;
 }
 
-/* Misi */
-.misi{
-  background-color: white;
-  border: 2px solid #333;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 1000px;
+.Gambar-VisiMisi{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:flex-end;
+  gap: 20px;
 }
 
+.Gambar-VisiMisi img{
+  width: 10%;
+  height: auto;
+}
 /* Container */
 .container {
   display: flex;
@@ -141,31 +180,35 @@ body, html {
   gap: 20px;
 }
 
-
-
-
 /* Jam Oprasional */
 .Jam-Oprasional {
+  background-color: #fffbf0;
+  border-top: 2px solid #ccc;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;  
+  text-align: justify;
   gap: 10px;
   padding: 5rem;
 }
 
 .Jam-Oprasional h2 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 900;
   margin-bottom: 10px;
 }
 
-.Jam-Oprasional p{
-  font-size: 40px;
+.Jam-Oprasional p {
+  font-size: 30px;
 }
-.Tentang-Kami{
+
+.Tentang-Kami {
   padding: 5rem;
 }
-.pembatas{
-  background-color:#ddf1f0;
+
+.pembatas {
+  background-color: #ddf1f0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -178,30 +221,40 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Full viewport height for centering */
-  background-color: #f0f0f0; /* Optional: Background for visibility */
-  
+  height: auto; /* Full viewport height for centering */
+  background-color: #d1eff9; /* Optional: Background for visibility */
+  padding: 3rem;
 }
+
 .Tentang-Kami h2 {
   font-size: 40px;
   font-weight: 900;
   margin-bottom: 10px;
   font-family: 'Gill sans';
+  color: #000000;
 }
 
-.Tentang-Kami p{
+.Tentang-Kami p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 20px;
   margin-bottom: 10px;
   padding-left: 2em;
   padding-right: 4em;
   text-align: center;
-
+  color:#000000;
 }
 
+.Tentang-Kami img {
+  width: 10%;
+  height: auto;
+  gap: 10px;
+}
 .ellipse {
-  width: auto; /* Width of the ellipse */
-  height: auto; /* Height of the ellipse */
-  background-color: #007bff; /* Fill color */
+  width: fit-content; /* Width of the ellipse */
+  height: fit-content; /* Height of the ellipse */
+  background-color: #f4dbbd; /* Fill color */
   border-radius: 50%; /* Makes it an ellipse */
   display: flex;
   justify-content: center;
@@ -210,18 +263,31 @@ body, html {
   color: white; /* Text color */
   font-family: Arial, sans-serif;
   font-size: 20px;
-  padding:7rem;
+  padding: 8rem;
 }
+
 /* Service */
+.service-heading {
+  width: fit-content;
+  height: fit-content;
+  background-color: #f4dbbd;
+  border-radius: 50%;
+  padding: 1rem 2rem 1rem  2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto; /* Added 'auto' to center horizontally */
+}
 .services {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 2em;
-  margin:2rem;
- 
+  margin: 2rem;
 }
+
 .service {
   background-color: #CFE6F6;
   padding: 2em;
@@ -236,10 +302,11 @@ body, html {
   text-decoration: none;
 }
 
-.service a{
+.service a {
   color: black;
   text-decoration: none;
 }
+
 .service:hover {
   transform: scale(1.1);
 }
@@ -261,7 +328,7 @@ body, html {
   gap: 10px;
   padding: 1rem 2rem;
   color: black;
-  background-color:#e2f1fc;
+  background-color: #e2f1fc;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -277,32 +344,17 @@ body, html {
 
 /* Footer */
 .footer {
-  cursor: pointer;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  background-color: #f8f8f8;
+  background-color: #fffbf0;
   padding: 20px;
-  border-top: 2px solid #ccc;
   font-family: Arial, sans-serif;
   font-size: larger;
 }
 
-.details{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 20px;
-}
 .contact, .address {
   width: 50%;
-}
-
-.contact ul li{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  padding-top: 10px;
 }
 
 .contact h3, .address h3 {
@@ -311,14 +363,17 @@ body, html {
   margin-bottom: 10px;
 }
 
-.icons {
-  display: flex;
-  gap: 10px;
+.contact li{
+  text-decoration: none;
+  list-style: none; /* Add this line to remove the dots */
 }
 
-.icons img {
-  width: 5%;
+.icons img{
+  flex-direction: column;
+  justify-content: center;
+  width: 12%;
   height: auto;
+  padding: 1rem;
 }
 
 .address p {
@@ -331,4 +386,3 @@ body, html {
   width: 10%;
   height: auto;
 }
-
